@@ -13,7 +13,7 @@
 Naive DQN 使用深度神經網路取代傳統的 Q-table，作為 Q 值的函數逼近器 (Function Approximator)。
 
 * **神經網路架構：** 模型接收上述 `(4, 4, 4)` 的狀態張量作為輸入，並在輸出層給出該狀態下四個可能動作的預期 Q 值 (Q-value)。
-* **損失函數 (Loss Function)：** 訓練目標為最小化預測 Q 值與目標 Q 值之間的均方誤差 (MSE Loss)。目標值 $y$ 的計算基於貝爾曼方程式：$y = R + \gamma \max_{a'} Q(S', a')$。透過計算 TD Error 並進行反向傳播 (Backpropagation) 更新網路權重 $\theta$。在 `static` 模式下，因環境物件完全固定，模型僅需記憶並擬合出一條固定的避障路徑即可順利收斂。
+* **損失函數 (Loss Function)：** 訓練目標為最小化預測 Q 值與目標 Q 值之間的均方誤差 (MSE Loss)。目標值 $y$ 的計算基於貝爾曼方程式。透過計算 TD Error 並進行反向傳播 (Backpropagation) 更新網路權重 $\theta$。在 `static` 模式下，因環境物件完全固定，模型僅需記憶並擬合出一條固定的避障路徑即可順利收斂。
 
 #### 3. 經驗回放機制 (Experience Replay Buffer)
 
