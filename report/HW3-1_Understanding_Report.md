@@ -1,10 +1,4 @@
-這是一份為你整理好的 HW3-1 理解報告草稿。這份報告結合了你提供的環境程式碼邏輯，以及作業要求涵蓋的 **Basic DQN** 與 **Experience Replay Buffer** 核心概念，你可以直接參考或微調後提交：
-
----
-
 ### HW3-1 Understanding Report: Naive DQN & Environment Interaction
-
-本報告旨在說明本作業之強化學習環境建構原理，以及基礎 Deep Q-Network (DQN) 與 Experience Replay Buffer 之核心運作邏輯。
 
 #### 1. 環境建構與狀態表示 (Environment & State Representation)
 
